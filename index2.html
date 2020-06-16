@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Create the title section-->
+<head>
+    <title>Chicago Crime</title>
+</head>
+<body>
+
+
+<!--Create a Form-->
+<form id="chicago" method="POST" action="">
+
+    <div class="panel-body">
+
+        <!--First business value question-->
+    <h2>What is the crime category for the below district?</h2>
+        Category 'Very Safe' - Crime count between 0 and 100000<br>
+        Category 'Safe' - Crime count between 100001 and 150000<br>
+        Category 'Moderately Vulnerable' - Crime count between 150001 and 180000<br>
+        Category 'Vulnerable' - Crime count between 180001 and 210000<br>
+        Category 'Highly Vulnerable' - Crime count between 210001 and 240000<br>
+        Category 'Extremely Vulnerable' - Crime count between 240001 and 300000<br>
+    <br>
+
+        <!--Dropdown for districts-->
+    Select a District: <select name="district">
+        <option value="Central">Central</option>
+        <option value="Wentworth">Wentworth</option>
+        <option value="South Chicago">South Chicago</option>
+        <option value="Calumet">Calumet</option>
+        <option value="Gresham">Gresham</option>
+        <option value="Englewood">Englewood</option>
+        <option value="Chicago Lawn">Chicago Lawn</option>
+        <option value="Deering">Deering</option>
+        <option value="Ogden">Ogden</option>
+        <option value="Harrison">Harrison</option>
+        <option value="Near West">Near West</option>
+        <option value="Congressional">Congressional</option>
+        <option value="Shakespeare">Shakespeare</option>
+        <option value="Austin">Austin</option>
+        <option value="Jefferson Park">Jefferson Park</option>
+        <option value="Albany Park">Albany Park</option>
+        <option value="Near North">Near North</option>
+        <option value="Town Hall">Town Hall</option>
+        <option value="Lincoln">Lincoln</option>
+        <option value="Maxwell">Maxwell</option>
+        <option value="Morgan Park">Morgan Park</option>
+        <option value="Prospect Heights">Prospect Heights</option>
+        <option value="Rogers Park">Rogers Park</option>
+        <option value="Grand Central">Grand Central</option>
+        <option value="Chicago Central">Chicago Central</option>
+        <option value="Gainville Park">Gainville Park</option>
+    </select>
+    </div>
+    <br>
+    <br>
+
+    <!--Submit button for first question-->
+    <input type="submit" name="Submit" value="Category">
+
+    <br>
+    <br>
+
+    <div class="panel-body">
+
+        <!--Second Business Value Question-->
+    <h2>Which hours in the below selected district are the top 3 most dangerous hours?</h2>
+    <br>
+
+        <!--Dropdown for districts-->
+     Select a District: <select name="hours">
+    <option value="Central">Central</option>
+        <option value="Wentworth">Wentworth</option>
+        <option value="South Chicago">South Chicago</option>
+        <option value="Calumet">Calumet</option>
+        <option value="Gresham">Gresham</option>
+        <option value="Englewood">Englewood</option>
+        <option value="Chicago Lawn">Chicago Lawn</option>
+        <option value="Deering">Deering</option>
+        <option value="Ogden">Ogden</option>
+        <option value="Harrison">Harrison</option>
+        <option value="Near West">Near West</option>
+        <option value="Congressional">Congressional</option>
+        <option value="Shakespeare">Shakespeare</option>
+        <option value="Austin">Austin</option>
+        <option value="Jefferson Park">Jefferson Park</option>
+        <option value="Albany Park">Albany Park</option>
+        <option value="Near North">Near North</option>
+        <option value="Town Hall">Town Hall</option>
+        <option value="Lincoln">Lincoln</option>
+        <option value="Maxwell">Maxwell</option>
+        <option value="Morgan Park">Morgan Park</option>
+        <option value="Prospect Heights">Prospect Heights</option>
+        <option value="Rogers Park">Rogers Park</option>
+        <option value="Grand Central">Grand Central</option>
+        <option value="Chicago Central">Chicago Central</option>
+        <option value="Gainville Park">Gainville Park</option>
+    </select>
+
+    <br>
+    <br><br>
+
+        <!--Submit Button for second question-->
+    <input type="submit" name="Submit" value="Hour">
+    </div>
+
+    <br>
+    <br>
+
+        <!--Third Busines Value Section-->
+    <h2>Report a Crime?</h2>
+        <br>
+
+        <!--Text box for Full Name-->
+        Full Name: <input type="text" name="fullname">
+        <br>
+        <br>
+        <br>
+
+        <!--Dropdown for district-->
+        Select a District:
+        <select name="district2">
+        <option value="Central">Central</option>
+        <option value="Wentworth">Wentworth</option>
+        <option value="South Chicago">South Chicago</option>
+        <option value="Calumet">Calumet</option>
+        <option value="Gresham">Gresham</option>
+        <option value="Englewood">Englewood</option>
+        <option value="Chicago Lawn">Chicago Lawn</option>
+        <option value="Deering">Deering</option>
+        <option value="Ogden">Ogden</option>
+        <option value="Harrison">Harrison</option>
+        <option value="Near West">Near West</option>
+        <option value="Congressional">Congressional</option>
+        <option value="Shakespeare">Shakespeare</option>
+        <option value="Austin">Austin</option>
+        <option value="Jefferson Park">Jefferson Park</option>
+        <option value="Albany Park">Albany Park</option>
+        <option value="Near North">Near North</option>
+        <option value="Town Hall">Town Hall</option>
+        <option value="Lincoln">Lincoln</option>
+        <option value="Maxwell">Maxwell</option>
+        <option value="Morgan Park">Morgan Park</option>
+        <option value="Prospect Heights">Prospect Heights</option>
+        <option value="Rogers Park">Rogers Park</option>
+        <option value="Grand Central">Grand Central</option>
+        <option value="Chicago Central">Chicago Central</option>
+        <option value="Gainville Park">Gainville Park</option>
+        </select>
+        <br>
+        <br>
+        <br>
+
+        <!--Dropdown for Type of Crime-->
+        Select the Type of Crime:
+        <select name="crime">
+        <option value="Homicide">Homicide</option>
+        <option value="Burglary">Burglary</option>
+        <option value="Weapons Violation">Weapons Violation</option>
+        <option value="Theft">Theft</option>
+        <option value="Narcotics">Narcotics</option>
+        <option value="Battery">Battery</option>
+        <option value="Assault">Assault</option>
+        <option value="Sex Assault">Sex Assault</option>
+        <option value="Trespassing">Trespassing</option>
+        <option value="Offense">Offense</option>
+        <option value="Prostitution">Prostitution</option>
+        <option value="Peace Violation">Peace Violation</option>
+        <option value="Stalking">Stalking</option>
+        <option value="Kidnapping">Kidnapping</option>
+        <option value="Gambling">Gambling</option>
+        <option value="Obscenity">Obscenity</option>
+        <option value="Liquor Violation">Liquor Violation</option>
+        <option value="Other">Other</option>
+        </select>
+        <br>
+        <br>
+        <br>
+
+        <!--Text area for Crime Description-->
+        <textarea name="message" rows="10" cols="30" placeholder="Please describe the crime.."></textarea>
+        <br>
+        <br>
+
+        <!--Submit Button for Third Question-->
+        <input type="submit" name="Submit" value="Report">
+
+</form>
+</body>
+</html>
